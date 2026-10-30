@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayFreight.io - Pitch Deck</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0b0f19; color: #f8fafc; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .deck-container { width: 960px; height: 600px; background: #111827; border-radius: 16px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7); position: relative; overflow: hidden; display: flex; flex-direction: column; border: 1px solid #1f2937; }
+        .slide { display: none; padding: 50px 60px; height: 100%; flex-direction: column; justify-content: center; }
+        .slide.active { display: flex; }
+        h1 { font-size: 38px; color: #38bdf8; margin-bottom: 12px; font-weight: 800; }
+        h2 { font-size: 28px; color: #f1f5f9; margin-bottom: 20px; border-bottom: 2px solid #374151; padding-bottom: 10px; font-weight: 700; }
+        p { font-size: 17px; line-height: 1.6; color: #94a3b8; margin-bottom: 15px; }
+        ul { margin-left: 20px; font-size: 17px; color: #cbd5e1; }
+        li { margin-bottom: 10px; }
+        .controls { position: absolute; bottom: 25px; right: 30px; display: flex; gap: 10px; z-index: 10; }
+        button { background: #0284c7; color: white; border: none; padding: 10px 22px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; transition: background 0.2s; }
+        button:hover { background: #0369a1; }
+        .slide-number { position: absolute; bottom: 30px; left: 30px; color: #64748b; font-size: 14px; font-weight: 600; }
+        .highlight-box { background: #1f2937; border-left: 4px solid #38bdf8; padding: 18px; margin-top: 15px; border-radius: 0 8px 8px 0; }
+        .video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; }
+        .video-card { background: #1f2937; padding: 15px; border-radius: 8px; border: 1px solid #374151; text-align: center; }
+        .video-card a { display: inline-block; background: #0284c7; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 13px; margin-top: 10px; }
+        .video-card a:hover { background: #0369a1; }
+    </style>
+</head>
+<body>
+
+<div class="deck-container">
+    <!-- Slide 1: Title -->
+    <div class="slide active">
+        <h1>PayFreight.io</h1>
+        <p style="font-size: 22px; color: #e2e8f0; font-weight: 600;">Universal Automated Settlement Layer for Global Logistics</p>
+        <p style="margin-top: 25px; font-size: 15px; color: #38bdf8;">Backed by 26+ Years of Industry Expertise | Solana Protocol (USD & EUR)</p>
+    </div>
+
+    <!-- Slide 2: Problem -->
+    <div class="slide">
+        <h2>The Multi-Billion Dollar Logistics Bottleneck</h2>
+        <ul>
+            <li><strong>30–90 Day Payment Terms:</strong> Carriers and freight forwarders suffer from severe cash flow droughts while hauling cargo.</li>
+            <li><strong>High Friction & Fees:</strong> Cross-border payments between USA and Europe face slow wire delays and high FX conversion costs.</li>
+            <li><strong>Fragmented Systems:</strong> Freight exchanges match loads instantly, but financial clearing remains manual, slow, and isolated.</li>
+        </ul>
+    </div>
+
+    <!-- Slide 3: Solution & Architecture -->
+    <div class="slide">
+        <h2>The PayFreight Solution & Ecosystem</h2>
+        <p>An embedded smart contract settlement engine bridging traditional transport data with instant digital clearing.</p>
+        <div class="highlight-box">
+            <p style="color: #38bdf8; font-weight: bold; margin-bottom: 5px;">Founding Anchor & Architect:</p>
+            <p style="margin: 0; font-size: 15px;">Built by <strong>CargoTrans.net</strong>, natively integrating established exchange platforms <strong>TransNet</strong> and <strong>CargoNet</strong> to automate milestone payouts.</p>
+        </div>
+    </div>
+
+    <!-- Slide 4: Business Model -->
+    <div class="slide">
+        <h2>Sustainable Business Model</h2>
+        <ul>
+            <li><strong>Volume Tier Subscriptions:</strong> Prepaid monthly/annual packages tailored for high-volume freight brokers and exchanges.</li>
+            <li><strong>Dynamic Settlement Fees:</strong> Standard 1.5% transaction fee per cleared freight invoice, discounted down to 0.5% for high-volume enterprise partners.</li>
+            <li><strong>Hybrid Web 2.5 Rails:</strong> Supporting traditional SEPA/ACH bank payouts alongside crypto stablecoin settlements.</li>
+        </ul>
+    </div>
+
+    <!-- Slide 5: Traction & Coloseum Showcase -->
+    <div class="slide">
+        <h2>Traction & Live Build-in-Public Showcase</h2>
+        <p>Actively developed on Solana with core Rust/Anchor contracts deployed. Check out our live updates:</p>
+        <div class="video-grid">
+            <div class="video-card">
+                <p style="color: #f1f5f9; font-size: 15px; font-weight: bold; margin-bottom:5px;">Coloseum Arena Project</p>
+                <p style="font-size: 13px; margin-bottom:8px;">Official Hackathon Submission</p>
+                <a href="https://colosseum.com/arena/projects/cargotrans-b2b-dex-exchange" target="_blank">🔗 View Project Page</a>
+            </div>
+            <div class="video-card">
+                <p style="color: #f1f5f9; font-size: 15px; font-weight: bold; margin-bottom:5px;">Founder Introduction</p>
+                <p style="font-size: 13px; margin-bottom:8px;">26-year industry background</p>
+                <a href="https://youtube.com/shorts/L_zOjWn4x4Q" target="_blank">▶ Watch Short Intro</a>
+            </div>
+            <div class="video-card">
+                <p style="color: #f1f5f9; font-size: 15px; font-weight: bold; margin-bottom:5px;">Protocol Deep-Dive</p>
+                <p style="font-size: 13px; margin-bottom:8px;">Web3 logistics & settlement</p>
+                <a href="https://youtu.be/JiZUGKiwar0" target="_blank">▶ Watch Full Overview</a>
+            </div>
+            <div class="video-card">
+                <p style="color: #f1f5f9; font-size: 15px; font-weight: bold; margin-bottom:5px;">Weekly Updates #3 & #4</p>
+                <p style="font-size: 13px; margin-bottom:8px;">Escrow & e-CMR compliance</p>
+                <a href="https://youtu.be/ODL52s1AtCE" target="_blank">▶ Watch Updates</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: The Ask -->
+
+<!-- Slide 6: The Ask -->
+    <div class="slide">
+        <h2>The Investment Opportunity & Next Steps</h2>
+        <p>Seeking seed capital to finalize multi-currency regulatory compliance, expand exchange API integrations, and execute mainnet deployment.</p>
+        <div class="highlight-box" style="margin-top: 25px;">
+            <p style="color: #38bdf8; font-weight: bold; font-size: 18px; margin: 0;">Get in Touch: <a href="mailto:info@cargotrans.net" style="color: #38bdf8; text-decoration: underline;">info@cargotrans.net</a></p>
+            <p style="color: #94a3b8; font-size: 14px; margin-top: 8px;">Explore Investor Hub: <a href="https://www.payfreight.io/investors.html" target="_blank" style="color: #38bdf8;">payfreight.io/investors.html</a></p>
+        </div>
+    </div>
+    
+    <div class="slide-number"><span id="current-slide">1</span> / 6</div>
+    <div class="controls">
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const slideNumber = document.getElementById('current-slide');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) slide.classList.add('active');
+        });
+        slideNumber.textContent = index + 1;
+    }
+
+    function nextSlide() {
+        if (currentSlide < slides.length - 1) {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+    }
+
+    function prevSlide() {
+        if (currentSlide > 0) {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') nextSlide();
+        if (e.key === 'ArrowLeft') prevSlide();
+    });
+</script>
+
+</body>
+</html>
